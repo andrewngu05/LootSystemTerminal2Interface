@@ -14,7 +14,7 @@ main{
 }
 
 h1{
-    color: #8b4f3f;
+    color: #000000;
 }
 
 .field{
@@ -38,7 +38,7 @@ button{
     font-size: 18px;
     padding: 10px 20px;
     color: #ffffff;
-    background-color: #8b4f3f;
+    background-color: #0000ff;
     border: none;
 }
 
