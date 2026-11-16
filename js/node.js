@@ -60,7 +60,7 @@ function addLoot(event){
             totalValue = totalValue + loot[i].value;
         }
 
-        //Displaying the total and making sure it rounds to 2 decimals
+        //Displaying the total and making sure it rounds to 2 decimals if needed since we are talking about value
         totalDisplay.textContent = Math.round(totalValue * 100) / 100;
 
         //Clears what ever is in the box and brings cursor back there
@@ -76,5 +76,13 @@ addButton.addEventListener("click", addLoot);
 /*
 Debugging Reflection
 
+After adding a breakpoint inside my addLoot function and added in the new loot and value, what I noticed that the loot array
+was still empty but if we scrolled down a little bit we would see that a new item was created (example the name was chest and value was 20).
+It showed that the item was created but was not pushed into the array yet. 
+
+After that I stepped over the push command/line and the item is now found in the array and array now contained 1 item but the loot collected 
+hasn't updated yet and still says "no loot added" as well as the total value it was still at 0.
+
+Once I resumed the code the screen was then updated adding both the new loot and the total value of the collected loot.
 */
 
