@@ -48,7 +48,7 @@ function addLoot(event){
         lootList.textContent = "";
 
         for(let i = 0; i < loot.length; i++){
-            const listItem = document.createElement("1i");
+            const listItem = document.createElement("li");
             listItem.textContent = "[" + (i + 1) + "] " + loot[i].name + " - " + loot[i].value;
             lootList.appendChild(listItem);
         }
